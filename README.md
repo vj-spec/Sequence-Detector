@@ -139,6 +139,10 @@ module mealy_sequence_detector (
     end
 endmodule
 
+OUTPUT:
+![mealy](https://github.com/user-attachments/assets/27f4f428-68ee-475e-a2e5-d0dbd8ed5a03)
+
+
 
 Testbench for Sequence Detector (Moore and Mealy FSMs)
 
