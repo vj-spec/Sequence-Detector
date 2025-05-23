@@ -29,7 +29,7 @@ Save and Document Results:
 Capture the waveforms and include the results in the final report.
 
 Verilog Code for Sequence Detector Using Moore FSM
-
+```
 // moore_sequence_detector.v
 module moore_sequence_detector (
     input wire clk,
@@ -83,7 +83,7 @@ module moore_sequence_detector (
         endcase
     end
 endmodule
-
+```
 OUTPUT:
 ![moore](https://github.com/user-attachments/assets/3a03ffa2-b0f3-419a-a271-d2bf536dd7a6)
 
