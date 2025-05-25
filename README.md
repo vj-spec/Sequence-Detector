@@ -205,5 +205,8 @@ module sequence_detector_tb;
     end
 endmodule
 ```
+##Output
+![image](https://github.com/user-attachments/assets/284437a3-31af-41af-81ec-b0ebbfb89798)
+
 Conclusion
 In this experiment, Moore and Mealy FSMs were successfully designed and simulated to detect the sequence 1011. Both designs worked as expected, with the main difference being that the Moore FSM generated the output based on the current state, while the Mealy FSM generated the output based on both the current state and input. The testbench verified the functionality of both FSMs, demonstrating that the Verilog HDL can effectively model both types of state machines for sequence detection tasks.
