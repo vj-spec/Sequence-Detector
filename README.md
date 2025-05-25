@@ -6,29 +6,28 @@ To design and simulate a sequence detector using both Moore and Mealy state mach
 Vivado 2023.1 or equivalent Verilog simulation tool.
 Computer system with a suitable operating system.
 # Procedure
-Launch Vivado 2023.1:
+- Launch Vivado 2023.1:
+- Open Vivado and create a new project.
 
-Open Vivado and create a new project.
-Write the Verilog Code for Sequence Detector (Moore and Mealy FSM):
+## Write the Verilog Code for Sequence Detector (Moore and Mealy FSM):
+- Design two Verilog modules: one for a Moore FSM and another for a Mealy FSM to detect a sequence such as 1011.
 
-Design two Verilog modules: one for a Moore FSM and another for a Mealy FSM to detect a sequence such as 1011.
-Create the Testbench:
+## Create the Testbench:
+- Write a testbench to apply input sequences and verify the output of both FSM designs.
 
-Write a testbench to apply input sequences and verify the output of both FSM designs.
-Add the Verilog Files:
-
+## Add the Verilog Files:
 Add the Verilog code for both FSMs and the testbench to the Vivado project.
-Run Simulation:
 
-Run the simulation and observe the output to check if the sequence is detected correctly.
-Observe the Waveforms:
+## Run Simulation:
+- Run the simulation and observe the output to check if the sequence is detected correctly.
 
-Analyze the waveform to ensure both the Moore and Mealy machines detect the sequence as expected.
-Save and Document Results:
+## Observe the Waveforms:
+- Analyze the waveform to ensure both the Moore and Mealy machines detect the sequence as expected.
 
-Capture the waveforms and include the results in the final report.
+## Save and Document Results:
+- Capture the waveforms and include the results in the final report.
 
-Verilog Code for Sequence Detector Using Moore FSM
+# Verilog Code for Sequence Detector Using Moore FSM
 ```
 // moore_sequence_detector.v
 module moore_sequence_detector (
@@ -88,7 +87,7 @@ OUTPUT:
 ![moore](https://github.com/user-attachments/assets/3a03ffa2-b0f3-419a-a271-d2bf536dd7a6)
 
 
-Verilog Code for Sequence Detector Using Mealy FSM
+# Verilog Code for Sequence Detector Using Mealy FSM
 ```
 // mealy_sequence_detector.v
 module mealy_sequence_detector (
@@ -144,7 +143,7 @@ OUTPUT:
 
 
 
-Testbench for Sequence Detector (Moore and Mealy FSMs)
+# Testbench for Sequence Detector (Moore and Mealy FSMs)
 ```
 // sequence_detector_tb.v
 `timescale 1ns / 1ps
@@ -206,7 +205,8 @@ module sequence_detector_tb;
 endmodule
 ```
 ## Output
-![image](https://github.com/user-attachments/assets/284437a3-31af-41af-81ec-b0ebbfb89798)
+![fsm_tb](https://github.com/user-attachments/assets/d9bc8b83-abee-4195-abfc-51451d4ecf9b)
+
 
 # Conclusion
 In this experiment, Moore and Mealy FSMs were successfully designed and simulated to detect the sequence 1011. Both designs worked as expected, with the main difference being that the Moore FSM generated the output based on the current state, while the Mealy FSM generated the output based on both the current state and input. The testbench verified the functionality of both FSMs, demonstrating that the Verilog HDL can effectively model both types of state machines for sequence detection tasks.
