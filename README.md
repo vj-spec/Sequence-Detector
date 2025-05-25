@@ -205,7 +205,7 @@ module sequence_detector_tb;
     end
 endmodule
 ```
-##Output
+## Output
 ![image](https://github.com/user-attachments/assets/284437a3-31af-41af-81ec-b0ebbfb89798)
 
 Conclusion
